@@ -4,10 +4,26 @@
     "urlCheck": true,
     "es6": false,
     "postcss": false,
-    "minified": false
+    "minified": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
   "compileType": "miniprogram",
   "appid": "wx3ae86efe64bea73b",
   "projectname": "larabbs",
-  "miniprogramRoot": "./weapp"
+  "miniprogramRoot": "weapp/",
+  "libVersion": "2.28.0",
+  "srcMiniprogramRoot": "weapp/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }
