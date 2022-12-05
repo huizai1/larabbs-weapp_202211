@@ -71,14 +71,14 @@ const authRequest = async (url, options = {}, showLoading = true) => {
 
 // 上传文件
 const uploadFile = async (url, options = {}, showLoading = true) => {
+  await checkToken()
+
   // 显示加载中
   if (showLoading) {
     wx.showLoading({title: '上传中'})
   }
   // 拼接请求地址
   options.url = host + url
-
-  await checkToken()
 
   options.header = {
     Authorization: 'Bearer ' + store.getters.accessToken
